@@ -1,0 +1,325 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+	background: #E3E3E3;
+}
+ul,li {
+	padding: 0;
+	list-style: none;
+}
+
+/*顶部的样式*/
+.top-container {
+    background-color: #1d1d1d;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2);
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+	height: 3.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.top-container-readly {
+	width: 100vw;
+	height: 3.5rem;
+}
+.top-container-left {
+	width: 3.75rem;
+	height: 3.5rem;
+}
+.top-container-left a {
+	display: block;
+	width: 3.5rem;
+	height: 3.5rem;
+	background: url(../images/index.png) no-repeat 0 0;
+	background-size: cover;
+	background-origin: content-box;
+}
+.top-container-middle {
+	width: 3.5rem;
+	height: 3.5rem;
+	background: url(../images/nav-logo.f28bcf8a8822503b73bec6c09a784851.png) no-repeat 0 0;
+	background-size: cover;
+}
+.top-container-right {
+	width: 3.75rem;
+	height: 3.5rem;
+	background: url(../images/9.png) no-repeat 0 0;
+	background-size: 43% 43%;
+	background-position: 50% 50%;
+}
+/*轮播图的样式*/
+.return-banner {
+	 width: 100vw;
+	 height: 12.8rem;
+	 display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+}
+.return-banner-img {
+	position: relative;
+	width: 90vw;
+}
+.return-banner-img img {
+	width: 90vw;
+}
+.return-banner-img-dot {
+	width: 90vw;
+	height: 0.625rem;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 1.125rem;
+}
+.return-banner-img-dot span {
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background: white;
+	margin-left: 0.5rem;
+}
+/*热销商品的样式*/
+.hotgoods {
+	margin-top: 10px;
+	width: 100vw;
+	height: 21.1rem;
+	background: white;
+}
+.goods-box {
+	height: 18rem;
+	width: 100vw;
+	background: white;
+	overflow: scroll;
+	display: flex;
+}
+.container-title {
+	width: 100vw;
+	height: 2.82rem;
+	display: flex;
+	justify-content: center;
+	line-height: 2.82rem;
+	border-bottom: 1px solid #CCCCCC;
+} 
+.container-title h3 {
+	width: 90vw;
+	height: 2.82rem;
+	color: #666666;
+	font-size: 16px;
+	padding-left: 10px;
+}
+.container-title span {
+	display: inline-block;
+	width: 10vw;
+	height: 2.82rem;
+	text-align: center;
+	font-weight: 900;
+	color: #666666;
+}
+/*商品盒子的样式*/
+.goods-container {
+	width: 9.5rem;
+	height: 14.7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 5px;
+	float: left;
+}
+.goods-container-img {
+	width: 8.9rem;
+	height: 8.9rem;
+	border: 2px solid #f5f5f5;
+	overflow: hidden;
+	border-radius: 5px;
+	
+}
+.goods-container-img img {
+	width: 8.9rem;
+}
+.goods-container h4 {
+	width: 7.2rem;
+	height: 1.25rem;
+	/* 超出隐藏 */
+	overflow: hidden;
+	/* 强制文本不换行 */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 0.875rem;
+	color: #333;
+	margin-top: 0.625rem;
+}
+.goods-container p {
+	width: 7.2rem;
+	height: 1.25rem;
+	/* 超出隐藏 */
+	overflow: hidden;
+	/* 强制文本不换行 */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 0.75rem;
+	color: #7f7f7f;
+	margin-top: 0.3125rem;
+}
+.goods-container h5 {
+	width: 7.2rem;
+	height: 1.25rem;
+	color: #d44d44;
+}
+
+/* bags-clothes的样式 */
+.bags-clothes {
+	width: 100vw;
+	margin-top: 1.25rem;
+	background: white;
+	height: 59rem;
+}
+.goods-banner-container {
+	width: 100vw;
+	height: 11.2rem;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #CCCCCC;
+}
+.goods-banner-container:last-child {
+	border-bottom: 0px solid red;
+}
+.goods-banner-container-left {
+	width: 40vw;
+	height: 11.2rem;
+}
+.goods-banner-container-left img {
+	width: 9.8rem;
+}
+.goods-banner-container-right {
+	width: 60vw;
+	height: 11.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.goods-banner-container-right h4 {
+	width: 10.5rem;
+	height: 1.4rem;
+	font-size: 0.875rem;
+	color: #333;
+	margin-bottom: 5px;
+}
+.goods-banner-container-right p {
+	width: 10.5rem;
+	height: 1.25rem;
+	font-size: 0.75rem;
+	color: #7f7f7f;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.goods-banner-container-right p span {
+	display: inline-block;
+	height: 0.9rem;
+	width: 2.125rem;
+	background: #E5EFFF;
+	border: 1px solid blue;
+	border-radius: 2px;
+	text-align: center;
+	font-weight: 900;
+	color: #3965cc;
+	font-size: 0.625rem;
+}
+.goods-banner-container-right ul {
+	width: 10.5rem;
+	height: 1.25rem;
+	margin: 0.3125rem;
+}
+.goods-banner-container-right ul li {
+	display: inline-block;
+	float: left;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	padding: 1px;
+	border: 1px solid #CCCCCC;
+}
+.goods-banner-container-right ul li span {
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	
+}
+.goods-banner-container-right h5 {
+	width: 10.5rem;
+	height: 1.25rem;
+	color: #d44d44;
+}
+/*呼吸系列的样式*/
+.huxi {
+	margin-top: 1.25rem;
+	width: 100vw;
+	height: 43.75rem;
+	background: white;
+}
+.huxi .goods-container {
+	width: 12rem;
+	height: 17.1rem;
+	margin-left: 0.8rem;
+}
+.huxi .goods-container-img {
+	width: 12rem;
+	height: 12rem;
+}
+.huxi .goods-container  img {
+	width: 11rem;
+}
+.huxi .goods-container h4 {
+	width: 11rem;
+}
+.huxi .goods-container p {
+	width: 11rem;
+}
+.huxi .goods-container h5 {
+	width: 11rem;
+}
+.peijian {
+	height: 63rem;
+	width: 100vw;
+	background: white;
+	margin-bottom: 1.25rem;
+}
+/*底部的样式*/
+.bottom {
+	width: 100vw;
+	height: 5rem;
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+}
+.bottom-read {
+	width: 100vw;
+	height: 5rem;
+}
+.bottom-box {
+	width: 25vw;
+	height: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.bottom-box img {
+	width: 2rem;
+	height: 2rem;
+}
+.bottom-box p {
+	height: 1rem;
+	margin-top: 0.3125rem;
+	font-size: 0.625rem;
+	text-align: center;
+	color: #666;
+}
